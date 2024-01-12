@@ -5,9 +5,10 @@ using namespace std;
 
 int main()
 {
-    //MainClass main();
-    Product p1(1,"hossam",1.5,10);
-    p1.displayProduct();
+
+    string inventoryFileName = "inventory.txt";
+    MainClass main(inventoryFileName);
+    main.run();
     cout << "Hello world!" << endl;
     return 0;
 }

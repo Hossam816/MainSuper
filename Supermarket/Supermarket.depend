@@ -1,49 +1,55 @@
 # depslib dependency file v1.0
-1704889386 source:e:\hossam\coruses\projects\mainsuper\supermarket\main.cpp
+1705064209 source:e:\hossam\coruses\projects\mainsuper\supermarket\main.cpp
 	<iostream>
 	"Supermrket.h"
 	"Product.h"
 
-1704888019 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\admin.cpp
+1705063017 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\admin.cpp
+	<iostream>
 	"Admin.h"
 
 1704888320 e:\hossam\coruses\projects\mainsuper\supermarket\include\admin.h
 	"Inventory.h"
 
-1704893802 e:\hossam\coruses\projects\mainsuper\supermarket\include\inventory.h
+1704910867 e:\hossam\coruses\projects\mainsuper\supermarket\include\inventory.h
 	"Product.h"
 	<vector>
 
-1704892001 e:\hossam\coruses\projects\mainsuper\supermarket\include\product.h
+1705063836 e:\hossam\coruses\projects\mainsuper\supermarket\include\product.h
 	<string>
 
-1704888328 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\buyer.cpp
+1705060089 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\buyer.cpp
+	<iostream>
 	"Buyer.h"
 
-1704888344 e:\hossam\coruses\projects\mainsuper\supermarket\include\buyer.h
+1705059134 e:\hossam\coruses\projects\mainsuper\supermarket\include\buyer.h
 	"Inventory.h"
 
-1704891973 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\product.cpp
+1705064085 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\product.cpp
 	"Product.h"
 	<iostream>
 
-1704893798 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\inventory.cpp
+1705063900 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\inventory.cpp
 	"Inventory.h"
 	<iostream>
 	<fstream>
 	<sstream>
 	<algorithm>
 
-1704889274 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\supermrket.cpp
+1705062959 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\supermrket.cpp
 	"Supermrket.h"
 
-1704888846 e:\hossam\coruses\projects\mainsuper\supermarket\include\supermrket.h
+1705062878 e:\hossam\coruses\projects\mainsuper\supermarket\include\supermrket.h
 	"UserInterface.h"
+	"Admin.h"
+	"Buyer.h"
+	"Inventory.h"
 
-1704888435 e:\hossam\coruses\projects\mainsuper\supermarket\include\userinterface.h
+1705061993 e:\hossam\coruses\projects\mainsuper\supermarket\include\userinterface.h
 	"Admin.h"
 	"Buyer.h"
 
-1704888211 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\userinterface.cpp
+1705063039 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\userinterface.cpp
+	<iostream>
 	"UserInterface.h"
 
