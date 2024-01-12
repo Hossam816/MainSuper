@@ -14,8 +14,8 @@ private:
 public:
     UserInterface(Admin& admin, Buyer& buyer);
     void displayMainMenu();
-    void displayAdminMenu();
-    void displayBuyerMenu();
+    void handleAdminMenu();
+    void handleBuyerMenu();
 
     ~UserInterface();
 };
