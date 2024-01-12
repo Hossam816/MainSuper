@@ -1,7 +1,15 @@
 #include "Product.h"
 #include <iostream>
 using namespace std;
-Product::Product(int code, string name,float price,float discount)
+Product::Product(int code, const string& name,float price,float discount, int quantity)
+{
+    this->code = code;
+    this->name = name;
+    this->price = price;
+    this->discount = discount;
+    this->quantity = quantity;
+}
+Product::Product(int code, const string& name,float price,float discount)
 {
     this->code = code;
     this->name = name;
@@ -26,6 +34,11 @@ float Product::getDiscount()
     return discount;
 }
 
+int Product::getQuantity()
+{
+    return quantity;
+}
+
 void Product::setCode(int newCode)
 {
     code = newCode;
@@ -41,6 +54,10 @@ void Product::setPrice(float newPrice)
 void Product::setDiscount(float newDiscount)
 {
     discount = newDiscount;
+}
+void Product::setQuantity(int buyerQuantity)
+{
+    buyerQuantity = quantity;
 }
 
 void Product::displayProduct(){
