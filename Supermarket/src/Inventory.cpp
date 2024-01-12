@@ -21,7 +21,7 @@ void Inventory::loadProducts(){
         float price,discount;
         if(iss>>code>>name>>price>>discount)
         {
-            products.push_back(Product(code,name,price,discount));
+                products.push_back(Product(code, name, price, discount));
         }
     }
     database.close();
