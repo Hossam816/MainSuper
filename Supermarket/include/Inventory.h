@@ -12,12 +12,14 @@ private:
     vector<Product> products;
     string fileName;
 public:
+    Inventory();
     Inventory(string fileName);
     void loadProducts();
     void saveProducts();
     void addProduct(Product product); //add product to inventory
     void modifiyProduct(int code, Product newProduct);//edit product in inventory
     bool removeProduct(int code);//remove product from inventory
+    bool updateProductQuantity(int productCode,int quantity);
     Product *searchProduct(int code);//search for product in inventory (pointer that point to product)
     void displayProduct();
 

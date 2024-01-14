@@ -6,4 +6,3 @@ void MainClass::run(){
     ui.displayMainMenu();
 }
 
-MainClass::~MainClass(){}

@@ -3,6 +3,7 @@
 #include "Admin.h"
 #include "Buyer.h"
 //applying composition with admin & buyer
+
 //manges user interface, providing diffrent menus for admin and buyer
 
 class UserInterface
@@ -17,7 +18,7 @@ public:
     void handleAdminMenu();
     void handleBuyerMenu();
 
-    ~UserInterface();
+
 };
 
 #endif // USERINTERFACE_H

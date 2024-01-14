@@ -67,30 +67,49 @@ void UserInterface::handleAdminMenu()
 //handle buyer page view
 void UserInterface::handleBuyerMenu()
 {
+    system("cls");
     int choice;
     do
     {
-       cout<<"\n\n\n\t\t\t\t_______Buyer Menu"<<endl;
-       cout<<"\n\n\n\t\t\t\t\t 1)View Product"<<endl;
-       cout<<"\n\n\n\t\t\t\t\t 2)Purchase Product"<<endl;
-       cout<<"\n\n\n\t\t\t\t\t 3)Back To Main Menu"<<endl;
+       cout<<"\n\n\t\t\t\t_______Buyer Menu\n"<<endl;
+       cout<<"\n\n\t\t\t\t\t 1)Set Your Balance\n"<<endl;
+       cout<<"\n\n\t\t\t\t\t 2)View Product\n"<<endl;
+       cout<<"\n\n\t\t\t\t\t 3)Add to Cart\n"<<endl;
+       cout<<"\n\n\t\t\t\t\t 4)View Cart\n"<<endl;
+       cout<<"\n\n\t\t\t\t\t 5)Checkout\n"<<endl;
+       cout<<"\n\n\t\t\t\t\t 6)Return to main menu \n"<<endl;
 
        cout<<"\n\n\t\t\t Enter Your Choice: ";
        cin>>choice;
 
        switch(choice){
-        case 1:
+       case 1:
+        cout<<"Enter Your Balance: ";
+        float balance;
+        cin>>balance;
+        buyer.setBalance(balance);
+        case 2:
             buyer.viewProducts();
             break;
-        case 2:
-            buyer.purchaseProduct();
-            break;
         case 3:
+            int productCode,quantity;
+            cout<<"Enter product code: ";
+            cin>>productCode;
+            cout<<"Enter Quantity: ";
+            cin>>quantity;
+            buyer.addToCart(productCode,quantity);
+            break;
+        case 4:
+            buyer.viewCart();
+            break;
+        case 5:
+            buyer.checkout();
+            break;
+        case 6:
             break;
         default:
             cout<<"Invalid choice!, Please try again"<<endl;
        }
-    }while(choice !=3 );
+    }while(choice !=6 );
 }
 
-UserInterface::~UserInterface(){}

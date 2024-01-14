@@ -11,8 +11,8 @@ class Product
        int code;
        float price;
        float discount;
-       int quantity;
        string name;
+       int quantity;
 
    public:
     Product(int code, const string& name, float price, float discount);
@@ -32,7 +32,9 @@ class Product
     void setPrice(float price);
     void setDiscount(float discount);
     void setQuantity(int quantity);
-    void displayProduct();
+
+
+    void displayMainProduct();
 
     ~Product();
 };

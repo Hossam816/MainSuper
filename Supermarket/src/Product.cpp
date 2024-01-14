@@ -60,8 +60,8 @@ void Product::setQuantity(int buyerQuantity)
     buyerQuantity = quantity;
 }
 
-void Product::displayProduct(){
-    cout<<code<<"\t\t\t"<<name<<"\t\t"<<price<<"\t\t"<<discount<< "\n";
+void Product::displayMainProduct(){
+    cout<<code<<"\t\t\t"<<name<<"\t\t\t"<<price<<"\t\t\t"<<discount<<"\t\t\t"<<quantity<< "\n";
 }
 
 

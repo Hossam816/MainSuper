@@ -18,7 +18,6 @@ public:
     MainClass(string inventoryFileName);
     void run();
 
-    ~MainClass();
 };
 
 #endif // SUPERMRKET_H

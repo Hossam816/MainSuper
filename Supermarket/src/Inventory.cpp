@@ -9,6 +9,25 @@ Inventory::Inventory(string fileName): fileName(fileName){
     loadProducts();
 }
 
+//update product quantity after buying
+
+bool Inventory::updateProductQuantity(int productCode,int quantity)
+{
+    for(auto product:products)
+    {
+        if(product.getCode()==productCode&&product.getQuantity()>=quantity)
+        {
+            product.setQuantity(product.getQuantity()-quantity);
+            saveProducts();
+            return true;
+        }else
+        {
+            return false;
+        }
+    }
+    return false; //product not found
+}
+
 //Reads the product data file and populates the products vector.
 void Inventory::loadProducts(){
     ifstream database(fileName);
@@ -16,12 +35,12 @@ void Inventory::loadProducts(){
     while(getline(database, line))
     {
         istringstream iss(line);
-        int code;
+        int code, quantity;
         string name;
         float price,discount;
-        if(iss>>code>>name>>price>>discount)
+        if(iss>>code>>name>>price>>discount>>quantity)
         {
-                products.push_back(Product(code, name, price, discount));
+                products.push_back(Product(code, name, price, discount,quantity));
         }
     }
     database.close();
@@ -31,9 +50,10 @@ void Inventory::loadProducts(){
 void Inventory::saveProducts()
 {
     ofstream database(fileName);
+
     for(auto& product:products)
     {
-        database<<product.getCode()<<" "<<product.getName()<<" "<<product.getPrice()<<" "<<product.getDiscount()<<endl;
+        database<<product.getCode()<<" "<<product.getName()<<" "<<product.getPrice()<<" "<<product.getDiscount()<<" "<<product.getQuantity()<<endl;
     }
     database.close();
 }
@@ -66,6 +86,7 @@ void Inventory::modifiyProduct(int code, Product newProduct)
         //once product is found we update "p" with it's new name,price,discount
         if(p.getCode() == code)
         {
+            //set new product members
             p.setName(newProduct.getName());
             p.setPrice(newProduct.getPrice());
             p.setDiscount(newProduct.getDiscount());
@@ -119,9 +140,11 @@ void Inventory::displayProduct(){
         cout<<"There is no Data Found."<<endl;
     }
     cout<<"Inventory Products."<<endl;
+    cout<<"\n\nCode"<<"\t\t\t"<<"Name"<<"\t\t\t"<<"Price"<<"\t\t\t"<<"Discount"<<"\t\t"<<"Quantity"<< "\n";
+
     for(auto& p: products)
     {
-        p.displayProduct();
+        p.displayMainProduct();
     }
 }
 

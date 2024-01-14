@@ -1,8 +1,10 @@
 # depslib dependency file v1.0
-1705064209 source:e:\hossam\coruses\projects\mainsuper\supermarket\main.cpp
+1705271023 source:e:\hossam\coruses\projects\mainsuper\supermarket\main.cpp
 	<iostream>
 	"Supermrket.h"
 	"Product.h"
+	"Buyer.h"
+	"Inventory.h"
 
 1705063017 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\admin.cpp
 	<iostream>
@@ -11,45 +13,67 @@
 1704888320 e:\hossam\coruses\projects\mainsuper\supermarket\include\admin.h
 	"Inventory.h"
 
-1704910867 e:\hossam\coruses\projects\mainsuper\supermarket\include\inventory.h
+1705269072 e:\hossam\coruses\projects\mainsuper\supermarket\include\inventory.h
 	"Product.h"
 	<vector>
 
-1705063836 e:\hossam\coruses\projects\mainsuper\supermarket\include\product.h
+1705271143 e:\hossam\coruses\projects\mainsuper\supermarket\include\product.h
 	<string>
 
-1705060089 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\buyer.cpp
+1705271671 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\buyer.cpp
 	<iostream>
+	"CartItem.h"
+	"Product.h"
+	"Cart.h"
 	"Buyer.h"
 
-1705059134 e:\hossam\coruses\projects\mainsuper\supermarket\include\buyer.h
+1705271297 e:\hossam\coruses\projects\mainsuper\supermarket\include\buyer.h
 	"Inventory.h"
+	"Cart.h"
 
-1705064085 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\product.cpp
+1705271141 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\product.cpp
 	"Product.h"
 	<iostream>
 
-1705063900 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\inventory.cpp
+1705271147 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\inventory.cpp
 	"Inventory.h"
 	<iostream>
 	<fstream>
 	<sstream>
 	<algorithm>
 
-1705062959 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\supermrket.cpp
+1705266779 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\supermrket.cpp
 	"Supermrket.h"
 
-1705062878 e:\hossam\coruses\projects\mainsuper\supermarket\include\supermrket.h
+1705266888 e:\hossam\coruses\projects\mainsuper\supermarket\include\supermrket.h
 	"UserInterface.h"
 	"Admin.h"
 	"Buyer.h"
 	"Inventory.h"
 
-1705061993 e:\hossam\coruses\projects\mainsuper\supermarket\include\userinterface.h
+1705266896 e:\hossam\coruses\projects\mainsuper\supermarket\include\userinterface.h
 	"Admin.h"
 	"Buyer.h"
 
-1705063039 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\userinterface.cpp
+1705272090 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\userinterface.cpp
 	<iostream>
 	"UserInterface.h"
+
+1705261628 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\cartitem.cpp
+	<string>
+	"Product.h"
+	"CartItem.h"
+
+1705261540 e:\hossam\coruses\projects\mainsuper\supermarket\include\cartitem.h
+	<string>
+	"Product.h"
+
+1705272223 source:e:\hossam\coruses\projects\mainsuper\supermarket\src\cart.cpp
+	<Vector>
+	<iostream>
+	"Cart.h"
+
+1705266379 e:\hossam\coruses\projects\mainsuper\supermarket\include\cart.h
+	"CartItem.h"
+	<vector>
 
