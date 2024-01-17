@@ -36,6 +36,8 @@
 		</Compiler>
 		<Unit filename="include/Admin.h" />
 		<Unit filename="include/Buyer.h" />
+		<Unit filename="include/Cart.h" />
+		<Unit filename="include/CartItem.h" />
 		<Unit filename="include/Inventory.h" />
 		<Unit filename="include/Product.h" />
 		<Unit filename="include/Supermrket.h" />
@@ -43,6 +45,8 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Admin.cpp" />
 		<Unit filename="src/Buyer.cpp" />
+		<Unit filename="src/Cart.cpp" />
+		<Unit filename="src/CartItem.cpp" />
 		<Unit filename="src/Inventory.cpp" />
 		<Unit filename="src/Product.cpp" />
 		<Unit filename="src/Supermrket.cpp" />
